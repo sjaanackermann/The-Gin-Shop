@@ -1,31 +1,68 @@
 <?php
 
+//if (session_status() !== PHP_SESSION_ACTIVE) {session_start();}
+if(session_id() == '' || !isset($_SESSION)){session_start();}
+
 ?>
 
-<!DOCTYPE html>
+<!doctype html>
 <html class="no-js" lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Gin Shop</title>
 
-    <!-- Foundation CSS -->
-    <link rel="stylesheet" href="css/foundation.css" />
+        <!-- Foundation CSS -->
+         <link rel="stylesheet" href="css/foundation.css" />
 
-    <!-- My CSS -->
-    <link rel="stylesheet" href="css/style.css">
+        <!-- My CSS -->
+        <link rel="stylesheet" href="css/style.css">
 
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <script src="js/vendor/modernizr.js"></script>
+  </head>
+  <body>
 
-</head>
+    <nav class="top-bar" data-topbar role="navigation">
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="index.php">The Gin Shop</a></h1>
+        </li>
+        <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+      </ul>
 
-<body>
+      <section class="top-bar-section">
+      <!-- Right Nav Section -->
+        <ul class="right">
+          <li><a href="about.php">About</a></li>
+          <li><a href="products.php">Products</a></li>
+          <li><a href="cart.php">View Cart</a></li>
+          <li><a href="orders.php">My Orders</a></li>
+          <li><a href="contact.php">Contact</a></li>
+          <?php
+
+          if(isset($_SESSION['username'])){
+            echo '<li><a href="account.php">My Account</a></li>';
+            echo '<li><a href="logout.php">Log Out</a></li>';
+          }
+          else{
+            echo '<li><a href="login.php">Log In</a></li>';
+            echo '<li><a href="register.php">Register</a></li>';
+          }
+          ?>
+        </ul>
+      </section>
+    </nav>
+
+
+
+
+    <img data-interchange="[images/hd.jpg, (retina)], [images/landscape.jpg, (large)], [images/mobile.jpg, (mobile)], [images/medium.jpg, (medium)]">
+    <noscript><img src="images/landscape.jpg"></noscript>
 
     <footer>
         <div class="footer" id="footer">
@@ -35,9 +72,9 @@
                     <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
                         <h3> About </h3>
                         <ul>
-                            <li> <a href=""> Our Company </a> </li>
-                            <li> <a href=""> Our Team </a> </li>
-                            <li> <a href=""> Terms of Services </a> </li>
+                            <li> <a href="#"> Our Company </a> </li>
+                            <li> <a href="#"> Our Team </a> </li>
+                            <li> <a href="#"> Terms of Services </a> </li>
                         </ul>
                     </div>
 
@@ -94,8 +131,7 @@
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script>
-        $(document).foundation();
+      $(document).foundation();
     </script>
-</body>
-
+  </body>
 </html>
