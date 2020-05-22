@@ -75,9 +75,9 @@ include 'config.php';
 
             while($obj = $result->fetch_object()) {
 
-              echo '<div class="large-4 columns">';
+              echo '<div class="large-4 columns zoomin">';
               echo '<p><h3>'.$obj->product_name.'</h3></p>';
-              echo '<img src="images/products/'.$obj->product_img_name.'"/>';
+              echo '<img  src="images/products/'.$obj->product_img_name.'"/>';
               echo '<p><strong>Product Code</strong>: '.$obj->product_code.'</p>';
               echo '<p><strong>Description</strong>: '.$obj->product_desc.'</p>';
               echo '<p><strong>Units Available</strong>: '.$obj->qty.'</p>';
