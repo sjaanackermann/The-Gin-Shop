@@ -61,7 +61,7 @@ if(session_id() == '' || !isset($_SESSION)){session_start();}
 
 
 
-    <img data-interchange="[images/hd.jpg, (retina)], [images/landscape.jpg, (large)], [images/mobile.jpg, (mobile)], [images/landscape.jpg, (medium)]">
+    <img data-interchange="[images/landscape.jpg, (retina)], [images/landscape.jpg, (large)], [images/mobile.jpg, (mobile)], [images/landscape.jpg, (medium)]">
     <noscript><img src="images/landscape.jpg"></noscript>
 
     <footer>
@@ -83,7 +83,7 @@ if(session_id() == '' || !isset($_SESSION)){session_start();}
                         <ul>
                             <li> <a href="#"> Contact Us </a> </li>
                             <li> <a href="#"> Delivery </a> </li>
-                            <li> <a href="#"> FAQ </a> </li>
+                            <li> <a href="faq.php"> FAQ </a> </li>
                         </ul>
 
                     </div>

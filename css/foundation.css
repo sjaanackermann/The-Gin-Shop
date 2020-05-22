@@ -1350,7 +1350,6 @@ meta.foundation-version {
     transition: left 300ms ease-out; }
     .top-bar-section ul {
       padding: 0;
-      width: 100%;
       height: auto;
       display: block;
       font-size: 16px;
