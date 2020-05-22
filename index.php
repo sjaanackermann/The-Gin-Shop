@@ -61,7 +61,7 @@ if(session_id() == '' || !isset($_SESSION)){session_start();}
 
 
 
-    <img data-interchange="[images/hd.jpg, (retina)], [images/landscape.jpg, (large)], [images/mobile.jpg, (mobile)], [images/medium.jpg, (medium)]">
+    <img data-interchange="[images/hd.jpg, (retina)], [images/landscape.jpg, (large)], [images/mobile.jpg, (mobile)], [images/landscape.jpg, (medium)]">
     <noscript><img src="images/landscape.jpg"></noscript>
 
     <footer>
