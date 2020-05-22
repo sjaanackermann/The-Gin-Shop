@@ -12,16 +12,15 @@ if(session_id() == '' || !isset($_SESSION)){session_start();}
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Gin Shop</title>
 
-        <!-- Foundation CSS -->
-         <link rel="stylesheet" href="css/foundation.css" />
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/style.css">
 
-        <!-- My CSS -->
-        <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
-
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Foundation CSS -->
+    <link rel="stylesheet" href="css/foundation.css" />
 
     <script src="js/vendor/modernizr.js"></script>
   </head>

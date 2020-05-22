@@ -12,9 +12,6 @@ if(session_id() == '' || !isset($_SESSION)){session_start();}
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact || The Gin Shop</title>
 
-    <!-- Foundation CSS -->
-    <link rel="stylesheet" href="css/foundation.css" />
-
     <!-- My CSS -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -22,6 +19,9 @@ if(session_id() == '' || !isset($_SESSION)){session_start();}
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Foundation CSS -->
+    <link rel="stylesheet" href="css/foundation.css" />
 
     <script src="js/vendor/modernizr.js"></script>
 
@@ -61,7 +61,7 @@ if(session_id() == '' || !isset($_SESSION)){session_start();}
 
     <div class="row" style="margin-top:30px;">
       <div class="small-12">
-        <p>This is wehre the about details will be includin the team info.</p>
+        <p>This is where the about details will be including the team info.</p>
 
         <p>Why The Gin Shop? </p>
 
