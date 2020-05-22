@@ -48,8 +48,8 @@
 
 -- INSERT INTO `products` (`id`, `product_code`, `product_name`, `product_desc`, `product_img_name`, `qty`, `price`) VALUES
 -- (1, 'GIN1', 'Malfy Gin', 'Distilled from Juniper, Coriander, Italian Pink Grapefruit, Rhubarb and 4 furtherbotanicals. 41% Alcohol.', 'gin1.jpg', 30, '350.00'),
--- (2, 'GIN2', 'Sugar Bird Gin', 'It’s got that lightly floral flavour that you’d expect from a quality gin, but – surprise! – you won’t expect the rare citrus twang, which is uniquely Sugarbird. You may also pick up notes of honeybush, rooibos, rose geranium, orange peel and buchu, originally sourced from the garden of one of our founders.', 'gin2.jpg', 25, '360.00'),
--- (3, 'GIN3', 'KWV Cruxland Gin', 'Cruxland's infusion of eight exotic signature botanicals and rare Kalahari !N'abbas is a world-first Also known as 'Kalahari truffles, this unique ingredient grows in the Kalahari region and is only harvested after the first rains by those who have the rare skill to do so.', 'gin3.jpg', 30, '350.00');
+-- (2, 'GIN2', 'Sugar Bird Gin', 'It’s got that lightly floral flavour that you’d expect from a quality gin, but – surprise! – you won’t expect the rare citrus twang, which is uniquely Sugarbird. You may also pick up notes of honeybush, rooibos, rose geranium, orange peel and buchu.', 'gin2.jpg', 25, '360.00'),
+-- (3, 'GIN3', 'KWV Cruxland Gin', 'Cruxland’s infusion of eight exotic signature botanicals and rare Kalahari !N’abbas is a world-first Also known as ’Kalahari truffles, this unique ingredient grows in the Kalahari region and is only harvested after the first rains.', 'gin3.jpg', 30, '350.00');
 
 -- -- --------------------------------------------------------
 
@@ -76,9 +76,6 @@
 -- --
 
 -- INSERT INTO `users` (`id`, `fname`, `lname`, `address`, `city`, `pin`, `email`, `password`, `type`) VALUES
--- (1, 'admin', 'admin', 'admin', 'admin', admin, 'admin@admin.com', 'password', 'admin');
+-- (1, 'admin', 'admin', 'admin', 'admin', 0000, 'admin@admin.com', 'password', 'admin');
 
 
--- /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
--- /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
--- /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
