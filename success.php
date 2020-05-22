@@ -56,6 +56,10 @@ if(session_id() == '' || !isset($_SESSION)){session_start();}
       </section>
     </nav>
 
+    <!-- HERO IMAGE -->
+    <img data-interchange="[images/landscape.jpg, (retina)], [images/landscape.jpg, (large)], [images/mobile.jpg, (mobile)], [images/landscape.jpg, (medium)]">
+    <noscript><img src="images/landscape.jpg"></noscript>
+
 
     <div class="row" style="margin-top:10px;">
       <div class="small-12">
