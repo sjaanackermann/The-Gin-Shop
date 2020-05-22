@@ -59,6 +59,43 @@ if(session_id() == '' || !isset($_SESSION)){session_start();}
       </section>
     </nav>
 
+    <!-- Google Maps -->
+    <div class="contact">
+          <h3>Want to get in touch with us?</h3>
+    </div>
+
+    <br>
+
+
+    <div class="container">
+    <h4>Feel free to submit your query to us below:</h4>
+    <form action="contactAdd.php" method="POST">
+        <div class="form-group">
+            <label>Name:</label>
+            <input type="text" name="name" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label>Email:</label>
+            <input type="email" name="email" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label>Message:</label>
+            <textarea class="form-control" name="message" required></textarea>
+        </div>
+        <div class="form-group">
+            <button class="btn btn-info" type="submit">Submit</button>
+        </div>
+    </form>
+    </div>
+
+    <br>
+
+    <div class="contactMap">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d4104.25768617099!2d18.445474117783412!3d-33.924002452592696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x1dcc5d9854044ed9%3A0x6a0ebf49da5aabab!2sCodeSpace%2C%206%20Beach%20Rd%2C%20Woodstock%2C%20Cape%20Town%2C%208000!3m2!1d-33.9247137!2d18.4487146!5e0!3m2!1sen!2sza!4v1590164880693!5m2!1sen!2sza" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+
+
+
     <footer>
         <div class="footer" id="footer">
             <div class="container">

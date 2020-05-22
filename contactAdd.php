@@ -1,12 +1,33 @@
 <?php
 
+
+require('config.php');
+
+
+extract($_POST);
+
+
+$sql = "INSERT into contactus (name,email,message,created_date) VALUES('" . $name . "','" . $email . "','" . $message . "','" . date('Y-m-d') . "')";
+
+
+$success = $mysqli->query($sql);
+
+
+if (!$success) {
+    die("Couldn't enter data: ".$mysqli->error);
+}
+
+?>
+<!-- echo "Thank You For Contacting Us ";
+
+
+$conn->close(); -->
+
+<?php
+
 //if (session_status() !== PHP_SESSION_ACTIVE) {session_start();}
 if(session_id() == '' || !isset($_SESSION)){session_start();}
 
-if(!isset($_SESSION["username"])){
-  header("location:index.php");
-}
-include 'config.php';
 ?>
 
 <!doctype html>
@@ -14,10 +35,10 @@ include 'config.php';
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Orders || The Gin Shop</title>
+    <title>The Gin Shop</title>
+
     <!-- My CSS -->
     <link rel="stylesheet" href="css/style.css">
-
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -25,6 +46,7 @@ include 'config.php';
 
     <!-- Foundation CSS -->
     <link rel="stylesheet" href="css/foundation.css" />
+
     <script src="js/vendor/modernizr.js"></script>
   </head>
   <body>
@@ -43,7 +65,7 @@ include 'config.php';
           <li><a href="about.php">About</a></li>
           <li><a href="products.php">Products</a></li>
           <li><a href="cart.php">View Cart</a></li>
-          <li class="active"><a href="orders.php">My Orders</a></li>
+          <li><a href="orders.php">My Orders</a></li>
           <li><a href="contact.php">Contact</a></li>
           <?php
 
@@ -60,35 +82,19 @@ include 'config.php';
       </section>
     </nav>
 
+    <!-- HERO IMAGE -->
+    <img data-interchange="[images/landscape.jpg, (retina)], [images/landscape.jpg, (large)], [images/mobile.jpg, (mobile)], [images/landscape.jpg, (medium)]">
+    <noscript><img src="images/landscape.jpg"></noscript>
+
+    <!-- CONTENT OF INDEX PAGE STARTS -->
+
+          <h1 class=thanks>Thank you for contacting us. Someone will be in touch shortly.</h1>
 
 
 
-    <div class="row" style="margin-top:10px;">
-      <div class="large-12">
-        <h3>My COD Orders</h3>
-        <hr>
 
-        <?php
-          $user = $_SESSION["username"];
-          $result = $mysqli->query("SELECT * from orders where email='".$user."'");
-          if($result) {
-            while($obj = $result->fetch_object()) {
-              //echo '<div class="large-6">';
-              echo '<p><h4>Order ID ->'.$obj->id.'</h4></p>';
-              echo '<p><strong>Date of Purchase</strong>: '.$obj->date.'</p>';
-              echo '<p><strong>Product Code</strong>: '.$obj->product_code.'</p>';
-              echo '<p><strong>Product Name</strong>: '.$obj->product_name.'</p>';
-              echo '<p><strong>Price Per Unit</strong>: '.$obj->price.'</p>';
-              echo '<p><strong>Units Bought</strong>: '.$obj->units.'</p>';
-              echo '<p><strong>Total Cost</strong>: '.$currency.$obj->total.'</p>';
-              echo '<p><hr></p>';
-            }
-          }
-        ?>
-      </div>
-    </div>
-
-
+    
+    <!-- CONTENT OF INDEX PAGE ENDS -->
 
 
     <footer>
@@ -155,10 +161,6 @@ include 'config.php';
     </footer>
 
 
-
-
-
-
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script>
@@ -166,3 +168,4 @@ include 'config.php';
     </script>
   </body>
 </html>
+

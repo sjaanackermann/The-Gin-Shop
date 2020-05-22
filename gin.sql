@@ -78,4 +78,10 @@
 -- INSERT INTO `users` (`id`, `fname`, `lname`, `address`, `city`, `pin`, `email`, `password`, `type`) VALUES
 -- (1, 'admin', 'admin', 'admin', 'admin', 0000, 'admin@admin.com', 'password', 'admin');
 
-
+-- CREATE TABLE `contactus` (
+--   `id` int(10) AUTO_INCREMENT PRIMARY KEY,
+--   `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+--   `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+--   `message` text COLLATE utf8mb4_unicode_ci NOT NULL,
+--   `created_date` date DEFAULT NULL
+-- ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
