@@ -1,13 +1,16 @@
 <?php
 
 //if (session_status() !== PHP_SESSION_ACTIVE) {session_start();}
-if(session_id() == '' || !isset($_SESSION)){session_start();}
+if (session_id() == '' || !isset($_SESSION)) {
+    session_start();
+}
 
 ?>
 
 <!doctype html>
 <html class="no-js" lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact || The Gin Shop</title>
@@ -25,51 +28,113 @@ if(session_id() == '' || !isset($_SESSION)){session_start();}
 
     <script src="js/vendor/modernizr.js"></script>
 
-  </head>
-  <body id="top">
+</head>
+
+<body id="top">
 
     <nav class="top-bar" data-topbar role="navigation">
-      <ul class="title-area">
-        <li class="name">
-          <h1><a href="index.php">The Gin Shop</a></h1>
-        </li>
-        <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
-      </ul>
-
-      <section class="top-bar-section">
-      <!-- Right Nav Section -->
-        <ul class="right">
-          <li><a href="about.php">About</a></li>
-          <li><a href="products.php">Products</a></li>
-          <li><a href="cart.php">View Cart</a></li>
-          <li><a href="orders.php">My Orders</a></li>
-          <li class="active"><a href="contact.php">Contact</a></li>
-          <?php
-
-          if(isset($_SESSION['username'])){
-            echo '<li><a href="account.php">My Account</a></li>';
-            echo '<li><a href="logout.php">Log Out</a></li>';
-          }
-          else{
-            echo '<li><a href="login.php">Log In</a></li>';
-            echo '<li><a href="register.php">Register</a></li>';
-          }
-          ?>
+        <ul class="title-area">
+            <li class="name">
+                <h1><a href="index.php">The Gin Shop</a></h1>
+            </li>
+            <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
         </ul>
-      </section>
+
+        <section class="top-bar-section">
+            <!-- Right Nav Section -->
+            <ul class="right">
+                <li><a href="about.php">About</a></li>
+                <li><a href="products.php">Products</a></li>
+                <li><a href="cart.php">View Cart</a></li>
+                <li><a href="orders.php">My Orders</a></li>
+                <li class="active"><a href="contact.php">Contact</a></li>
+                <?php
+
+                if (isset($_SESSION['username'])) {
+                    echo '<li><a href="account.php">My Account</a></li>';
+                    echo '<li><a href="logout.php">Log Out</a></li>';
+                } else {
+                    echo '<li><a href="login.php">Log In</a></li>';
+                    echo '<li><a href="register.php">Register</a></li>';
+                }
+                ?>
+            </ul>
+        </section>
     </nav>
 
     <div class="row" style="margin-top:30px;">
-      <div class="small-12">
-        <p>This is where the about details will be including the team info.</p>
+        <div class="small-12">
+            <p>This is where the about details will be including the team info.</p>
 
-        <p>Why The Gin Shop? </p>
+            <p>Why The Gin Shop? </p>
 
-        <footer>
-           <p style="text-align:center; font-size:0.8em;">&copy; The Gin Shop. All Rights Reserved.</p>
-        </footer>
-
-      </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="Ateam">
+                <h1>Meet the TEAM:</h1>
+                <br>
+                <br>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card mx-auto mt-4" style="width: 18rem;">
+                                <img src="images/team/2.jpg" class="card-img-top" alt="Nate Wilson">
+                                <div class="card-body">
+                                    <h5 class="card-title">Nate Wilson</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <hr>
+                        <br>
+                        <div class="col">
+                            <div class="card mx-auto mt-4" style="width: 18rem;">
+                                <img src="images/team/3.jpg" class="card-img-top" alt="Cindy Kenwood">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cindy Kenwood</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <hr>
+                <br>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card mx-auto mt-4" style="width: 18rem;">
+                                <img src="images/team/4.jpg" class="card-img-top" alt="Julia Ferdinand">
+                                <div class="card-body">
+                                    <h5 class="card-title">Julia Ferdinand</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <hr>
+                        <br>
+                        <div class="col">
+                            <div class="card mx-auto mt-4" style="width: 18rem;">
+                                <img src="images/team/1.jpg" class="card-img-top" alt="Roger Moore">
+                                <div class="card-body">
+                                    <h5 class="card-title">Roger Moore</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
     </div>
 
     <div class="back-to-top-wrapper">
@@ -142,7 +207,8 @@ if(session_id() == '' || !isset($_SESSION)){session_start();}
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script>
-      $(document).foundation();
+        $(document).foundation();
     </script>
-  </body>
+</body>
+
 </html>
