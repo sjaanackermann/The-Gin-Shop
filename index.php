@@ -24,7 +24,7 @@ if(session_id() == '' || !isset($_SESSION)){session_start();}
 
     <script src="js/vendor/modernizr.js"></script>
   </head>
-  <body>
+  <body id="top">
 
     <nav class="top-bar" data-topbar role="navigation">
       <ul class="title-area">
@@ -57,11 +57,23 @@ if(session_id() == '' || !isset($_SESSION)){session_start();}
       </section>
     </nav>
 
-
-
-
+    <!-- HERO IMAGE -->
     <img data-interchange="[images/landscape.jpg, (retina)], [images/landscape.jpg, (large)], [images/mobile.jpg, (mobile)], [images/landscape.jpg, (medium)]">
     <noscript><img src="images/landscape.jpg"></noscript>
+
+    <!-- CONTENT OF INDEX PAGE STARTS -->
+
+
+
+
+
+
+
+    <!-- CONTENT OF INDEX PAGE ENDS -->
+
+    <div class="back-to-top-wrapper">
+        <a href="#top" class="back-to-top-link" aria-label="Scroll to Top">🔝</a>
+    </div>
 
     <footer>
         <div class="footer" id="footer">

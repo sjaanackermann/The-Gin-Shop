@@ -32,7 +32,7 @@ include 'config.php';
     <link rel="stylesheet" href="css/foundation.css" />
     <script src="js/vendor/modernizr.js"></script>
   </head>
-  <body>
+  <body id="top">
 
     <nav class="top-bar" data-topbar role="navigation">
       <ul class="title-area">
@@ -97,6 +97,10 @@ include 'config.php';
       </div>
     </div>
 
+
+    <div class="back-to-top-wrapper">
+        <a href="#top" class="back-to-top-link" aria-label="Scroll to Top">🔝</a>
+    </div>
 
     <footer>
         <div class="footer" id="footer">

@@ -30,7 +30,7 @@ if(isset($_SESSION["username"])){
     <script src="js/vendor/modernizr.js"></script>
 
   </head>
-  <body>
+  <body id="top">
 
     <nav class="top-bar" data-topbar role="navigation">
       <ul class="title-area">
@@ -101,6 +101,10 @@ if(isset($_SESSION["username"])){
       </div>
     </form>
 
+
+    <div class="back-to-top-wrapper">
+        <a href="#top" class="back-to-top-link" aria-label="Scroll to Top">🔝</a>
+    </div>
 
     <footer>
         <div class="footer" id="footer">

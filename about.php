@@ -26,7 +26,7 @@ if(session_id() == '' || !isset($_SESSION)){session_start();}
     <script src="js/vendor/modernizr.js"></script>
 
   </head>
-  <body>
+  <body id="top">
 
     <nav class="top-bar" data-topbar role="navigation">
       <ul class="title-area">
@@ -72,7 +72,9 @@ if(session_id() == '' || !isset($_SESSION)){session_start();}
       </div>
     </div>
 
-
+    <div class="back-to-top-wrapper">
+        <a href="#top" class="back-to-top-link" aria-label="Scroll to Top">🔝</a>
+    </div>
     <footer>
         <div class="footer" id="footer">
             <div class="container">

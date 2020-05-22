@@ -1,13 +1,16 @@
 <?php
 
 //if (session_status() !== PHP_SESSION_ACTIVE) {session_start();}
-if(session_id() == '' || !isset($_SESSION)){session_start();}
+if (session_id() == '' || !isset($_SESSION)) {
+    session_start();
+}
 
 ?>
 
 <!doctype html>
 <html class="no-js" lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact || The Gin Shop</title>
@@ -25,77 +28,81 @@ if(session_id() == '' || !isset($_SESSION)){session_start();}
 
     <script src="js/vendor/modernizr.js"></script>
 
-  </head>
-  <body>
+</head>
+
+<body id="top">
 
     <nav class="top-bar" data-topbar role="navigation">
-      <ul class="title-area">
-        <li class="name">
-          <h1><a href="index.php">The Gin Shop</a></h1>
-        </li>
-        <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
-      </ul>
-
-      <section class="top-bar-section">
-      <!-- Right Nav Section -->
-        <ul class="right">
-          <li><a href="about.php">About</a></li>
-          <li><a href="products.php">Products</a></li>
-          <li><a href="cart.php">View Cart</a></li>
-          <li><a href="orders.php">My Orders</a></li>
-          <li class="active"><a href="contact.php">Contact</a></li>
-          <?php
-
-          if(isset($_SESSION['username'])){
-            echo '<li><a href="account.php">My Account</a></li>';
-            echo '<li><a href="logout.php">Log Out</a></li>';
-          }
-          else{
-            echo '<li><a href="login.php">Log In</a></li>';
-            echo '<li><a href="register.php">Register</a></li>';
-          }
-          ?>
+        <ul class="title-area">
+            <li class="name">
+                <h1><a href="index.php">The Gin Shop</a></h1>
+            </li>
+            <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
         </ul>
-      </section>
+
+        <section class="top-bar-section">
+            <!-- Right Nav Section -->
+            <ul class="right">
+                <li><a href="about.php">About</a></li>
+                <li><a href="products.php">Products</a></li>
+                <li><a href="cart.php">View Cart</a></li>
+                <li><a href="orders.php">My Orders</a></li>
+                <li class="active"><a href="contact.php">Contact</a></li>
+                <?php
+
+                if (isset($_SESSION['username'])) {
+                    echo '<li><a href="account.php">My Account</a></li>';
+                    echo '<li><a href="logout.php">Log Out</a></li>';
+                } else {
+                    echo '<li><a href="login.php">Log In</a></li>';
+                    echo '<li><a href="register.php">Register</a></li>';
+                }
+                ?>
+            </ul>
+        </section>
     </nav>
+
 
     <!-- Google Maps -->
     <div class="contact">
-          <h3>Want to get in touch with us?</h3>
+        <h3>Want to get in touch with us?</h3>
     </div>
 
     <br>
 
 
     <div class="container">
-    <h4>Feel free to submit your query to us below:</h4>
-    <form action="contactAdd.php" method="POST">
-        <div class="form-group">
-            <label>Name:</label>
-            <input type="text" name="name" class="form-control" required>
-        </div>
-        <div class="form-group">
-            <label>Email:</label>
-            <input type="email" name="email" class="form-control" required>
-        </div>
-        <div class="form-group">
-            <label>Message:</label>
-            <textarea class="form-control" name="message" required></textarea>
-        </div>
-        <div class="form-group">
-            <button class="btn btn-info" type="submit">Submit</button>
-        </div>
-    </form>
+        <h4>Feel free to submit your query to us below:</h4>
+        <form action="contactAdd.php" method="POST">
+            <div class="form-group">
+                <label>Name:</label>
+                <input type="text" name="name" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label>Email:</label>
+                <input type="email" name="email" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label>Message:</label>
+                <textarea class="form-control" name="message" required></textarea>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-info" type="submit">Submit</button>
+            </div>
+        </form>
     </div>
 
     <br>
 
     <div class="contactMap">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d4104.25768617099!2d18.445474117783412!3d-33.924002452592696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x1dcc5d9854044ed9%3A0x6a0ebf49da5aabab!2sCodeSpace%2C%206%20Beach%20Rd%2C%20Woodstock%2C%20Cape%20Town%2C%208000!3m2!1d-33.9247137!2d18.4487146!5e0!3m2!1sen!2sza!4v1590164880693!5m2!1sen!2sza" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d4104.25768617099!2d18.445474117783412!3d-33.924002452592696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x1dcc5d9854044ed9%3A0x6a0ebf49da5aabab!2sCodeSpace%2C%206%20Beach%20Rd%2C%20Woodstock%2C%20Cape%20Town%2C%208000!3m2!1d-33.9247137!2d18.4487146!5e0!3m2!1sen!2sza!4v1590164880693!5m2!1sen!2sza" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </div>
 
-
-
+    <br>
+    
+    <div class="back-to-top-wrapper">
+        <a href="#top" class="back-to-top-link" aria-label="Scroll to Top">🔝</a>
+    </div>
     <footer>
         <div class="footer" id="footer">
             <div class="container">
@@ -163,7 +170,8 @@ if(session_id() == '' || !isset($_SESSION)){session_start();}
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script>
-      $(document).foundation();
+        $(document).foundation();
     </script>
-  </body>
+</body>
+
 </html>
