@@ -12,6 +12,13 @@ div.contactMap {
 	margin-left: auto;
 	margin-right: auto;
 }
+/* Smooth scrolling IF user doesn't have a preference due to motion sensitivities */
+@media screen {
+  html,
+  body {
+    scroll-behavior: smooth;
+  }
+}
 
 .back-to-top-link {
 	display: inline-block;
