@@ -43,11 +43,11 @@ if (session_id() == '' || !isset($_SESSION)) {
         <section class="top-bar-section">
             <!-- Right Nav Section -->
             <ul class="right">
-                <li><a href="about.php">About</a></li>
+                <li class="active"><a href="about.php">About</a></li>
                 <li><a href="products.php">Products</a></li>
                 <li><a href="cart.php">View Cart</a></li>
                 <li><a href="orders.php">My Orders</a></li>
-                <li class="active"><a href="contact.php">Contact</a></li>
+                <li><a href="contact.php">Contact</a></li>
                 <?php
 
                 if (isset($_SESSION['username'])) {
@@ -61,7 +61,7 @@ if (session_id() == '' || !isset($_SESSION)) {
             </ul>
         </section>
     </nav>
-    <div class="jumbotron">
+    <div class="jumbotron text-center">
         <h1 class="display-4">Why The Gin Shop?</h1>
         <p class="lead">The Gin Shop aims to provide the best possible experience when it comes to online Gin shopping.</p>
         <hr class="my-4">
@@ -70,13 +70,6 @@ if (session_id() == '' || !isset($_SESSION)) {
     <div class="row" style="margin-top:30px;">
         <div class="small-12">
 
-            <h2>Why The Gin Shop?</h2>
-
-            <p>The Gin Shop aims to provide the best possible experience when it comes to online Gin shopping.</p>
-            <p>We try to provide only the best Gin at the best possible prices, delivered straight to your door.</p>
-            <br>
-            <br>
-            <br>
             <br>
             <div class="Ateam">
                 <h1>Meet the TEAM:</h1>
