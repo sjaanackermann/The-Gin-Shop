@@ -99,7 +99,7 @@ if (session_id() == '' || !isset($_SESSION)) {
     </div>
 
     <br>
-    
+
     <div class="back-to-top-wrapper">
         <a href="#top" class="back-to-top-link" aria-label="Scroll to Top">🔝</a>
     </div>

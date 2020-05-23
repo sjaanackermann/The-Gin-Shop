@@ -61,13 +61,19 @@ if (session_id() == '' || !isset($_SESSION)) {
             </ul>
         </section>
     </nav>
-
+    <div class="jumbotron">
+        <h1 class="display-4">Why The Gin Shop?</h1>
+        <p class="lead">The Gin Shop aims to provide the best possible experience when it comes to online Gin shopping.</p>
+        <hr class="my-4">
+        <p>We try to provide only the best Gin at the best possible prices, delivered straight to your door.</p>
+    </div>
     <div class="row" style="margin-top:30px;">
         <div class="small-12">
-            <p>This is where the about details will be including the team info.</p>
 
-            <p>Why The Gin Shop? </p>
+            <h2>Why The Gin Shop?</h2>
 
+            <p>The Gin Shop aims to provide the best possible experience when it comes to online Gin shopping.</p>
+            <p>We try to provide only the best Gin at the best possible prices, delivered straight to your door.</p>
             <br>
             <br>
             <br>
@@ -83,7 +89,7 @@ if (session_id() == '' || !isset($_SESSION)) {
                                 <img src="images/team/2.jpg" class="card-img-top" alt="Nate Wilson">
                                 <div class="card-body">
                                     <h5 class="card-title">Nate Wilson</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <p class="card-text">Nate has alwyas had a passion for Gin. With the ever growing online markets growing. He finally decided to open his own online store. And so The Gin Shop was started.</p>
                                 </div>
                             </div>
                         </div>
@@ -95,7 +101,7 @@ if (session_id() == '' || !isset($_SESSION)) {
                                 <img src="images/team/3.jpg" class="card-img-top" alt="Cindy Kenwood">
                                 <div class="card-body">
                                     <h5 class="card-title">Cindy Kenwood</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <p class="card-text">Cindy is the Head of Marketing for The Gin Shop. She has really helped to bring the shop to the next level, making The Gin Shop well known competition in the industry. </p>
                                 </div>
                             </div>
                         </div>
@@ -111,7 +117,7 @@ if (session_id() == '' || !isset($_SESSION)) {
                                 <img src="images/team/4.jpg" class="card-img-top" alt="Julia Ferdinand">
                                 <div class="card-body">
                                     <h5 class="card-title">Julia Ferdinand</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <p class="card-text">Julia is the Customer Service Liason. She ensures that every single client has a fantastic experience with The Gin Shop. She lives to assist.</p>
                                 </div>
                             </div>
                         </div>
@@ -123,7 +129,7 @@ if (session_id() == '' || !isset($_SESSION)) {
                                 <img src="images/team/1.jpg" class="card-img-top" alt="Roger Moore">
                                 <div class="card-body">
                                     <h5 class="card-title">Roger Moore</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <p class="card-text">Roger is our Secret Agent. Some people may even call him Bond, James Bond. He is just here as a Gin tester. <br> Shaken and Stirred.</p>
                                 </div>
                             </div>
                         </div>

@@ -63,6 +63,9 @@ if(isset($_SESSION["username"])){
       </section>
     </nav>
 
+    <!-- HERO IMAGE -->
+    <img data-interchange="[images/landscape.jpg, (retina)], [images/landscape.jpg, (large)], [images/mobile.jpg, (mobile)], [images/landscape.jpg, (medium)]">
+    <noscript><img src="images/landscape.jpg"></noscript>
 
 
 

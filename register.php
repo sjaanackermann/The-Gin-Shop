@@ -59,6 +59,9 @@ if (isset($_SESSION["username"])) {header ("location:index.php");}
       </section>
     </nav>
 
+    <!-- HERO IMAGE -->
+    <img data-interchange="[images/landscape.jpg, (retina)], [images/landscape.jpg, (large)], [images/mobile.jpg, (mobile)], [images/landscape.jpg, (medium)]">
+    <noscript><img src="images/landscape.jpg"></noscript>
 
 
 
