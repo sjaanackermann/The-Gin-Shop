@@ -61,6 +61,10 @@ if (session_id() == '' || !isset($_SESSION)) {
             </ul>
         </section>
     </nav>
+    <!-- HERO IMAGE -->
+    <img data-interchange="[images/landscape.jpg, (retina)], [images/landscape.jpg, (large)], [images/mobile.jpg, (mobile)], [images/landscape.jpg, (medium)]">
+    <noscript><img src="images/landscape.jpg"></noscript>
+
     <div class="jumbotron text-center">
         <h1 class="display-4">Why The Gin Shop?</h1>
         <p class="lead">The Gin Shop aims to provide the best possible experience when it comes to online Gin shopping.</p>
