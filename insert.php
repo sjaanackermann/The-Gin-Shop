@@ -17,5 +17,3 @@ if($mysqli->query("INSERT INTO users (fname, lname, address, city, pin, email, p
 }
 
 header ("location:login.php");
-
-?>

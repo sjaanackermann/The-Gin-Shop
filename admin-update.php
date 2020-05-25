@@ -39,7 +39,3 @@ if($result) {
 
 
 header ("location:success.php");
-
-
-
-?>

@@ -152,16 +152,16 @@ if (isset($_SESSION["username"])) {header ("location:index.php");}
                     <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
                         <h3> About </h3>
                         <ul>
-                            <li> <a href="#"> Our Company </a> </li>
-                            <li> <a href="#"> Our Team </a> </li>
-                            <li> <a href="#"> Terms of Services </a> </li>
+                        <li> <a href="about.php"> Our Company </a> </li>
+                            <li> <a href="about.php"> Our Team </a> </li>
+                            <li> <a href="tos.php"> Terms of Services </a> </li>
                         </ul>
                     </div>
 
                     <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
                         <h3> Other </h3>
                         <ul>
-                            <li> <a href="#"> Contact Us </a> </li>
+                            <li> <a href="contact.php"> Contact Us </a> </li>
                             <li> <a href="#"> Delivery </a> </li>
                             <li> <a href="faq.php"> FAQ </a> </li>
                         </ul>
