@@ -27,47 +27,52 @@ if (session_id() == '' || !isset($_SESSION)) {
 
   <script src="js/vendor/modernizr.js"></script>
   <script>
-// Open the Modal
-function openModal() {
-  document.getElementById("myModal").style.display = "block";
-}
+    // Open the Modal
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";
+    }
 
-// Close the Modal
-function closeModal() {
-  document.getElementById("myModal").style.display = "none";
-}
+    // Close the Modal
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
 
-var slideIndex = 1;
-showSlides(slideIndex);
+    var slideIndex = 1;
+    showSlides(slideIndex);
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-</script>
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {
+        slideIndex = 1
+      }
+      if (n < 1) {
+        slideIndex = slides.length
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      captionText.innerHTML = dots[slideIndex - 1].alt;
+    }
+  </script>
+
 </head>
 
 <body id="top">
@@ -110,91 +115,71 @@ function showSlides(n) {
 
   <!-- FEATURED PRODUCTS -->
   <div class="jumbotron text-center">
-        <img src="images/logo.png">
-        <hr>
-        <h1 class="display-4">Featured Products</h1>
-    </div>
+    <img src="images/logo.png">
+    <hr>
+    <h1 class="display-4">Featured Products</h1>
+  </div>
   <!-- Images used to open the lightbox -->
-<div class="row">
-  <div class="column">
-    <img src="images/products/gin1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
-  </div>
-  <div class="column">
-    <img src="images/products/gin2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
-  </div>
-  <div class="column">
-    <img src="images/products/gin3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
-  </div>
-</div>
-
-<!-- The Modal/Lightbox -->
-<div id="myModal" class="modal">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
-  <div class="modal-content">
-
-    <div class="mySlides">
-      <div class="numbertext">1 / 3</div>
-      <img src="images/products/gin1.jpg" style="width:100%">
+  <div class="row">
+    <div class="column">
+      <img src="images/products/gin1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
     </div>
-
-    <div class="mySlides">
-      <div class="numbertext">2 / 3</div>
-      <img src="images/products/gin2.jpg" style="width:100%">
+    <div class="column">
+      <img src="images/products/gin2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
     </div>
-
-    <div class="mySlides">
-      <div class="numbertext">3 / 3</div>
-      <img src="images/products/gin3.jpg" style="width:100%">
+    <div class="column">
+      <img src="images/products/gin3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
     </div>
-
-    <!-- Next/previous controls -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
-</div>
+
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+      <div class="mySlides">
+        <div class="numbertext">1 / 3</div>
+        <img src="images/products/gin1.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 3</div>
+        <img src="images/products/gin2.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 3</div>
+        <img src="images/products/gin3.jpg" style="width:100%">
+      </div>
+
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+  </div>
 
 
 
   <!-- UPCOMING COLLECTION -->
   <div class="jumbotron text-center">
-        <h1 class="display-4">Products Coming Soon!</h1>
-    </div>
+    <h1 class="display-4">Products Coming Soon!</h1>
+  </div>
 
-    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="images/products/gin4.jpg" class="d-block w-100" alt="Stretton's Triple Berry">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Stretton's Triple Berry</h5>
-      </div>
+  <!-- Images used to open the lightbox -->
+  <div class="row">
+    <div class="column">
+      <img src="images/products/gin4.jpg" class="hover-shadow">
     </div>
-    <div class="carousel-item">
-      <img src="images/products/gin5.jpg" class="d-block w-100" alt="Hendricks Midsummer Solstice">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Hendricks Midsummer Solstice</h5>
-      </div>
+    <div class="column">
+      <img src="images/products/gin5.jpg" class="hover-shadow">
     </div>
-    <div class="carousel-item">
-      <img src="images/products/gin6.jpg" class="d-block w-100" alt="Tanqueray">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Tanqueray</h5>
-      </div>
+    <div class="column">
+      <img src="images/products/gin6.jpg" class="hover-shadow">
     </div>
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
+  </div>
+  </div>
+
 
 
 
@@ -272,13 +257,13 @@ function showSlides(n) {
   <script src="js/foundation.min.js"></script>
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-  </body>
-  <script>
-    $(document).foundation();
-  </script>
- 
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+<script>
+  $(document).foundation();
+</script>
+
 </body>
 
 </html>
