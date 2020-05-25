@@ -66,9 +66,11 @@ if (session_id() == '' || !isset($_SESSION)) {
     <noscript><img src="images/landscape.jpg"></noscript>
 
     <div class="jumbotron text-center">
+        <img src="images/logo.png">
+        <hr>
         <h1 class="display-4">Why The Gin Shop?</h1>
         <p class="lead">The Gin Shop aims to provide the best possible experience when it comes to online Gin shopping.</p>
-        <hr class="my-4">
+        <br>
         <p>We try to provide only the best Gin at the best possible prices, delivered straight to your door.</p>
     </div>
     <div class="row" style="margin-top:30px;">
