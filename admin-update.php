@@ -7,7 +7,7 @@ if($_SESSION["type"]!="admin") {
   header("location:index.php");
 }
 
-include 'config.php';
+include 'config/config.php';
 
 $_SESSION["products_id"] = array();
 $_SESSION["products_id"] = $_REQUEST['quantity'];

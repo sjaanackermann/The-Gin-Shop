@@ -4,7 +4,7 @@
 if (session_id() == '' || !isset($_SESSION)) {
     session_start();
 }
-include 'config.php';
+include 'config/config.php';
 ?>
 
 <!doctype html>

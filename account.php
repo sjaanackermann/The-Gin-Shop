@@ -14,7 +14,7 @@ if ($_SESSION["type"] === "admin") {
   header("location:admin.php");
 }
 
-include 'config.php';
+include 'config/config.php';
 
 ?>
 

@@ -3,7 +3,7 @@
 //if (session_status() !== PHP_SESSION_ACTIVE) {session_start();}
 if(session_id() == '' || !isset($_SESSION)){session_start();}
 
-include 'config.php';
+include 'config/config.php';
 
 $fname = $_POST["fname"];
 $lname = $_POST["lname"];

@@ -13,7 +13,7 @@ if ($_SESSION["type"] != "admin") {
   header("location:index.php");
 }
 
-include 'config.php';
+include 'config/config.php';
 ?>
 
 <!doctype html>

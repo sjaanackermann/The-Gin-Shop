@@ -8,7 +8,7 @@ if (session_id() == '' || !isset($_SESSION)) {
 if (!isset($_SESSION["username"])) {
   header("location:index.php");
 }
-include 'config.php';
+include 'config/config.php';
 ?>
 
 <!doctype html>

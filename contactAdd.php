@@ -1,7 +1,7 @@
 <?php
 
 
-require('config.php');
+require('config/config.php');
 
 
 extract($_POST);

@@ -2,7 +2,7 @@
 
 if(session_id() == '' || !isset($_SESSION)){session_start();}
 
-include 'config.php';
+include 'config/config.php';
 
 $product_id = $_GET['id'];
 $action = $_GET['action'];
