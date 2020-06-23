@@ -13,7 +13,7 @@ if (session_id() == '' || !isset($_SESSION)) {
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact || The Gin Shop</title>
+    <title>About || The Gin Shop</title>
 
     <!-- My CSS -->
     <link rel="stylesheet" href="css/style.css">
