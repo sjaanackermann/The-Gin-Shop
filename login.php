@@ -65,7 +65,7 @@ if(isset($_SESSION["username"])){
 
     <!-- HERO IMAGE -->
     <img data-interchange="[images/landscape.jpg, (retina)], [images/landscape.jpg, (large)], [images/mobile.jpg, (mobile)], [images/landscape.jpg, (medium)]">
-    <noscript><img src="images/landscape.jpg"></noscript>
+    <noscript><img src="images/landscape.jpg" alt="Hero Image"></noscript>
 
 
 

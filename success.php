@@ -61,7 +61,7 @@ if (session_id() == '' || !isset($_SESSION)) {
 
   <!-- HERO IMAGE -->
   <img data-interchange="[images/landscape.jpg, (retina)], [images/landscape.jpg, (large)], [images/mobile.jpg, (mobile)], [images/landscape.jpg, (medium)]">
-  <noscript><img src="images/landscape.jpg"></noscript>
+  <noscript><img src="images/landscape.jpg" alt="Hero image"></noscript>
 
 
   <div class="row" style="margin-top:10px;">

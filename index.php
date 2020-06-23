@@ -109,26 +109,26 @@ if (session_id() == '' || !isset($_SESSION)) {
 
   <!-- HERO IMAGE -->
   <img data-interchange="[images/landscape.jpg, (retina)], [images/landscape.jpg, (large)], [images/mobile.jpg, (mobile)], [images/landscape.jpg, (medium)]">
-  <noscript><img src="images/landscape.jpg"></noscript>
+  <noscript><img src="images/landscape.jpg" alt="Hero Image"></noscript>
 
   <!-- CONTENT OF INDEX PAGE STARTS -->
 
   <!-- FEATURED PRODUCTS -->
   <div class="jumbotron text-center">
-    <img src="images/logo.png">
+    <img src="images/logo.png" alt="logo">
     <hr>
     <h1 class="display-4">Featured Products</h1>
   </div>
   <!-- Images used to open the lightbox -->
   <div class="row">
     <div class="column">
-      <img src="images/products/gin1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+      <img src="images/products/gin1.jpg" alt="gin1" onclick="openModal();currentSlide(1)" class="hover-shadow">
     </div>
     <div class="column">
-      <img src="images/products/gin2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+      <img src="images/products/gin2.jpg" alt="gin2" onclick="openModal();currentSlide(2)" class="hover-shadow">
     </div>
     <div class="column">
-      <img src="images/products/gin3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+      <img src="images/products/gin3.jpg" alt="gin3" onclick="openModal();currentSlide(3)" class="hover-shadow">
     </div>
   </div>
 
@@ -139,17 +139,17 @@ if (session_id() == '' || !isset($_SESSION)) {
 
       <div class="mySlides">
         <div class="numbertext">1 / 3</div>
-        <img src="images/products/gin1.jpg" style="width:100%">
+        <img src="images/products/gin1.jpg" style="width:100%" alt="gin1">
       </div>
 
       <div class="mySlides">
         <div class="numbertext">2 / 3</div>
-        <img src="images/products/gin2.jpg" style="width:100%">
+        <img src="images/products/gin2.jpg" style="width:100%" alt="gin2">
       </div>
 
       <div class="mySlides">
         <div class="numbertext">3 / 3</div>
-        <img src="images/products/gin3.jpg" style="width:100%">
+        <img src="images/products/gin3.jpg" style="width:100%" alt="gin3">
       </div>
 
       <!-- Next/previous controls -->
@@ -168,13 +168,13 @@ if (session_id() == '' || !isset($_SESSION)) {
   <!-- Images used to open the lightbox -->
   <div class="row">
     <div class="column">
-      <img src="images/products/gin4.jpg" class="hover-shadow">
+      <img src="images/products/gin4.jpg" class="hover-shadow" alt="gin4">
     </div>
     <div class="column">
-      <img src="images/products/gin5.jpg" class="hover-shadow">
+      <img src="images/products/gin5.jpg" class="hover-shadow" alt="gin5">
     </div>
     <div class="column">
-      <img src="images/products/gin6.jpg" class="hover-shadow">
+      <img src="images/products/gin6.jpg" class="hover-shadow" alt="gin6">
     </div>
   </div>
   </div>

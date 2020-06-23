@@ -52,7 +52,7 @@
 
     <!-- HERO IMAGE -->
     <img data-interchange="[images/landscape.jpg, (retina)], [images/landscape.jpg, (large)], [images/mobile.jpg, (mobile)], [images/landscape.jpg, (medium)]">
-    <noscript><img src="images/landscape.jpg"></noscript>
+    <noscript><img src="images/landscape.jpg" alt="Hero Image"></noscript>
 
 
     <h2 style="text-align: center;"><b>TERMS AND CONDITIONS</b></h2>

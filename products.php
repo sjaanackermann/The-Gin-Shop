@@ -80,7 +80,7 @@ include 'config/config.php';
 
                     echo '<div class="large-4 columns zoomin">';
                     echo '<p><h3>' . $obj->product_name . '</h3></p>';
-                    echo '<img id="myImg" src="images/products/' . $obj->product_img_name . '"/>';
+                    echo '<img id="myImg" src="images/products/' . $obj->product_img_name . ' alt="product""/>';
                     echo '<p><strong>Product Code</strong>: ' . $obj->product_code . '</p>';
                     echo '<p><strong>Description</strong>: ' . $obj->product_desc . '</p>';
                     echo '<p><strong>Units Available</strong>: ' . $obj->qty . '</p>';
