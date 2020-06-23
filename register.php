@@ -154,7 +154,7 @@ if (isset($_SESSION["username"])) {header ("location:index.php");}
                         <ul>
                         <li> <a href="pages/about.php"> Our Company </a> </li>
                             <li> <a href="pages/about.php"> Our Team </a> </li>
-                            <li> <a href="tos.php"> Terms of Services </a> </li>
+                            <li> <a href="pages/tos.php"> Terms of Services </a> </li>
                         </ul>
                     </div>
 
