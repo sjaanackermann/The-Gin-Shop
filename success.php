@@ -67,7 +67,7 @@ if (session_id() == '' || !isset($_SESSION)) {
   <div class="row" style="margin-top:10px;">
     <div class="small-12">
       <p>Success. The task has been executed successfully!</p>
-      <p>Split up here and make another success.php?</p>
+    
     </div>
   </div>
 
