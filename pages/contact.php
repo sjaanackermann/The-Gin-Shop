@@ -47,7 +47,7 @@ if (session_id() == '' || !isset($_SESSION)) {
                 <li><a href="products.php">Products</a></li>
                 <li><a href="cart.php">View Cart</a></li>
                 <li><a href="orders.php">My Orders</a></li>
-                <li class="active"><a href="contact.php">Contact</a></li>
+                <li class="active"><a href="pages/contact.php">Contact</a></li>
                 <?php
 
                 if (isset($_SESSION['username'])) {
@@ -124,7 +124,7 @@ if (session_id() == '' || !isset($_SESSION)) {
                     <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
                         <h3> Other </h3>
                         <ul>
-                            <li> <a href="contact.php"> Contact Us </a> </li>
+                            <li> <a href="pages/contact.php"> Contact Us </a> </li>
                             <li> <a href="#"> Delivery </a> </li>
                             <li> <a href="faq.php"> FAQ </a> </li>
                         </ul>
