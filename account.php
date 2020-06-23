@@ -11,7 +11,7 @@ if (!isset($_SESSION["username"])) {
 }
 
 if ($_SESSION["type"] === "admin") {
-  header("location:admin.php");
+  header("location:admin/admin.php");
 }
 
 include 'config/config.php';

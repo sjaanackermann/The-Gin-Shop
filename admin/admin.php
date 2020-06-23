@@ -83,7 +83,7 @@ include 'config/config.php';
           echo '<p><strong>Description</strong>: ' . $obj->product_desc . '</p>';
           echo '<p><strong>Units Available</strong>: ' . $obj->qty . '</p>';
           echo '<div class="large-6 columns" style="padding-left:0;">';
-          echo '<form method="post" name="update-quantity" action="admin-update.php">';
+          echo '<form method="post" name="update-quantity" action="admin/admin-update.php">';
           echo '<p><strong>New Qty</strong>:</p>';
           echo '</div>';
           echo '<div class="large-6 columns">';
