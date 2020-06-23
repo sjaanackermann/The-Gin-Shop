@@ -54,7 +54,7 @@ include 'config.php';
     <section class="top-bar-section">
       <!-- Right Nav Section -->
       <ul class="right">
-        <li><a href="about.php">About</a></li>
+        <li><a href="pages/about.php">About</a></li>
         <li><a href="products.php">Products</a></li>
         <li><a href="cart.php">View Cart</a></li>
         <li><a href="orders.php">My Orders</a></li>
@@ -212,8 +212,8 @@ include 'config.php';
           <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
             <h3> About </h3>
             <ul>
-              <li> <a href="about.php"> Our Company </a> </li>
-              <li> <a href="about.php"> Our Team </a> </li>
+              <li> <a href="pages/about.php"> Our Company </a> </li>
+              <li> <a href="pages/about.php"> Our Team </a> </li>
               <li> <a href="tos.php"> Terms of Services </a> </li>
             </ul>
           </div>
