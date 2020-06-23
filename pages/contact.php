@@ -73,7 +73,7 @@ if (session_id() == '' || !isset($_SESSION)) {
 
     <div class="container">
         <h4>Feel free to submit your query to us below:</h4>
-        <form action="contactAdd.php" method="POST">
+        <form action="pages/contactAdd.php" method="POST">
             <div class="form-group">
                 <label>Name:</label>
                 <input type="text" name="name" class="form-control" required>
