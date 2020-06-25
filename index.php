@@ -16,7 +16,7 @@ if (session_id() == '' || !isset($_SESSION)) {
   <title>The Gin Shop</title>
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
   <!-- My CSS -->
@@ -77,21 +77,21 @@ if (session_id() == '' || !isset($_SESSION)) {
 
 <body id="top">
 
-<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="index.php">
-  <img src="images/logo.png" width="60" height="40" alt="The Gin Shop">
-  </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      <a class="mx-3 my-2" href="pages/about.php">About</a>
-      <a class="mx-3 my-2" href="products.php">Products</a>
-      <a class="mx-3 my-2" href="pages/gallery.php">Gallery</a>
-      <a class="mx-3 my-2" href="cart.php">View Cart</a>
-      <a class="mx-3 my-2" href="orders.php">My Orders</a>
-      <a class="mx-3 my-2" href="pages/contact.php">Contact</a>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.php">
+      <img src="images/logo.png" width="60" height="40" alt="The Gin Shop">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="mx-3 my-2" href="pages/about.php">About</a>
+        <a class="mx-3 my-2" href="products.php">Products</a>
+        <a class="mx-3 my-2" href="pages/gallery.php">Gallery</a>
+        <a class="mx-3 my-2" href="cart.php">View Cart</a>
+        <a class="mx-3 my-2" href="orders.php">My Orders</a>
+        <a class="mx-3 my-2" href="pages/contact.php">Contact</a>
         <?php
 
         if (isset($_SESSION['username'])) {
@@ -102,9 +102,9 @@ if (session_id() == '' || !isset($_SESSION)) {
           echo '<a class="mx-3 my-2" href="register.php">Register</a>';
         }
         ?>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
 
 
@@ -116,56 +116,38 @@ if (session_id() == '' || !isset($_SESSION)) {
 
   <!-- FEATURED PRODUCTS -->
   <div class="jumbotron text-center">
-    <img src="images/logo.png" alt="logo">
+    <img src="images/logo.png" width="200" height="200" alt="logo">
     <hr>
     <h1 class="display-4">Products Coming Soon!</h1>
   </div>
 
-<div class="container">
-<div class="row">
-  <div class="col-sm-3">
-    <div class="card mx-auto mt-4">
-    <img src="images/gin4.jpg" class="card-img-top" alt="gin4">
-      <div class="card-body">
-        <h5 class="card-title">Stretton's Triple Berry</h5>
+
+  <div class="row" style="margin-top:10px;">
+    <div class="small-12">
+      <div class="container-gallery">
+        <div class="large-4 columns zoomin">
+          <img id="myImg" src="images/gin4.jpg" alt="product" onclick="openModal();currentSlide(1)" class="hover-shadow">
+          <p>
+            <h4>Stretton's Triple Berry</h4>
+          </p>
+        </div>
+
+        <div class="large-4 columns zoomin">
+          <img id="myImg" src="images/gin5.jpg" alt="product" onclick="openModal();currentSlide(2)" class="hover-shadow">
+          <p>
+            <h4>Hendrick's Midsummer Solstice</h4>
+          </p>
+        </div>
+
+        <div class="large-4 columns zoomin">
+          <img id="myImg" src="images/gin6.jpg" alt="product" onclick="openModal();currentSlide(3)" class="hover-shadow">
+          <p>
+            <h4>Tanquerray Sevilla</h4>
+          </p>
+        </div>
       </div>
     </div>
   </div>
-  <div class="col-sm-3">
-    <div class="card mx-auto mt-4">
-    <img src="images/gin5.jpg" class="card-img-top" alt="gin5">
-      <div class="card-body">
-        <h5 class="card-title">Hendrick's Midsummer Solstice</h5>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-3">
-    <div class="card mx-auto mt-4">
-    <img src="images/gin6.jpg" class="card-img-top" alt="gin6">
-      <div class="card-body">
-        <h5 class="card-title">Tanquerray Sevilla</h5>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-
-
-
-
-  <!-- UPCOMING COLLECTION -->
-  <!-- <div class="jumbotron text-center">
-    <h1 class="display-4">Products Coming Soon!</h1>
-  </div> -->
-
-  <!-- Images used to open the lightbox -->
-  <!-- <div class="row">
-      <img src="images/products/gin4.jpg" class="hover-shadow" alt="gin4">
-      <img src="images/products/gin5.jpg" class="hover-shadow" alt="gin5">
-      <img src="images/products/gin6.jpg" class="hover-shadow" alt="gin6">
-  </div> -->
-
-
 
 
 
