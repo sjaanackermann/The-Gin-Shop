@@ -107,21 +107,22 @@ if (session_id() == '' || !isset($_SESSION)) {
   </div>
 </nav>
 
+<div class="container-gallery">
+<div class="large-4 columns zoomin">
+<p><h3>Malfy Gin</h3></p>
+<img id="myImg" src="../images/gin1.jpg" alt="product" onclick="openModal();currentSlide(1)" class="hover-shadow">
+</div>
 
+<div class="large-4 columns zoomin">
+<p><h3>Sugar Bird Gin</h3></p>
+<img id="myImg" src="../images/gin2.jpg" alt="product" onclick="openModal();currentSlide(2)" class="hover-shadow">
+</div>
 
-
-  <!-- Images used to open the lightbox -->
-  <div class="row">
-    <div class="column">
-      <img src="images/gin4.jpg" alt="gin1" onclick="openModal();currentSlide(1)" class="hover-shadow">
-    </div>
-    <div class="column">
-      <img src="images/gin5.jpg" alt="gin2" onclick="openModal();currentSlide(2)" class="hover-shadow">
-    </div>
-    <div class="column">
-      <img src="images/gin6.jpg" alt="gin3" onclick="openModal();currentSlide(3)" class="hover-shadow">
-    </div>
-  </div>
+<div class="large-4 columns zoomin">
+<p><h3>KWV Gin</h3></p>
+<img id="myImg" src="../images/gin3.jpg" alt="product" onclick="openModal();currentSlide(3)" class="hover-shadow">
+</div>
+</div>
 
   <!-- The Modal/Lightbox -->
   <div id="myModal" class="modal">
@@ -130,17 +131,17 @@ if (session_id() == '' || !isset($_SESSION)) {
 
       <div class="mySlides">
         <div class="numbertext">1 / 3</div>
-        <img src="images/gin4.jpg" style="width:100%" alt="gin1">
+        <img src="../images/gin1.jpg" style="width:100%" alt="gin1">
       </div>
 
       <div class="mySlides">
         <div class="numbertext">2 / 3</div>
-        <img src="images/gin5.jpg" style="width:100%" alt="gin2">
+        <img src="../images/gin2.jpg" style="width:100%" alt="gin2">
       </div>
 
       <div class="mySlides">
         <div class="numbertext">3 / 3</div>
-        <img src="images/gin6.jpg" style="width:100%" alt="gin3">
+        <img src="../images/gin3.jpg" style="width:100%" alt="gin3">
       </div>
 
       <!-- Next/previous controls -->
@@ -149,6 +150,15 @@ if (session_id() == '' || !isset($_SESSION)) {
     </div>
   </div>
 
+  <div class="container">
+    <div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </div>
+  </div>
 
     
 <div class="back-to-top-wrapper">

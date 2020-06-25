@@ -121,35 +121,33 @@ if (session_id() == '' || !isset($_SESSION)) {
     <h1 class="display-4">Products Coming Soon!</h1>
   </div>
 
-
+<div class="container">
 <div class="row">
-  <div class="col-sm-6">
-    <div class="card">
+  <div class="col-sm-3">
+    <div class="card mx-auto mt-4">
     <img src="images/gin4.jpg" class="card-img-top" alt="gin4">
       <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <h5 class="card-title">Stretton's Triple Berry</h5>
       </div>
     </div>
   </div>
-  <div class="col-sm-6">
-    <div class="card">
+  <div class="col-sm-3">
+    <div class="card mx-auto mt-4">
     <img src="images/gin5.jpg" class="card-img-top" alt="gin5">
       <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <h5 class="card-title">Hendrick's Midsummer Solstice</h5>
       </div>
     </div>
   </div>
-  <div class="col-sm-6">
-    <div class="card">
+  <div class="col-sm-3">
+    <div class="card mx-auto mt-4">
     <img src="images/gin6.jpg" class="card-img-top" alt="gin6">
       <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <h5 class="card-title">Tanquerray Sevilla</h5>
       </div>
     </div>
   </div>
+</div>
 </div>
 
 

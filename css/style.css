@@ -12,6 +12,16 @@
 	transform: scale(1.1); 
 }
 
+.close {
+	color: lightslategray;
+}
+
+.container-gallery {
+	text-align: center;
+	padding-top: 20px;
+	height: 50px;
+	
+}
 
 /* input[type=submit]{
 	margin: auto;
