@@ -29,35 +29,32 @@ if (session_id() == '' || !isset($_SESSION)) {
 
 <body id="top">
 
-<nav class="top-bar" data-topbar role="navigation">
-        <ul class="title-area">
-            <li class="name">
-                <h1><a href="index.php">The Gin Shop</a></h1>
-            </li>
-            <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
-        </ul>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="../index.php">The Gin Shop</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="mx-3 my-2" href="pages/about.php">About</a>
+      <a class="mx-3 my-2" href="products.php">Products</a>
+      <a class="mx-3 my-2" href="pages/gallery.php">Gallery</a>
+      <a class="mx-3 my-2" href="cart.php">View Cart</a>
+      <a class="mx-3 my-2" href="orders.php">My Orders</a>
+      <a class="mx-3 my-2" href="pages/contact.php">Contact</a>
+        <?php
 
-        <section class="top-bar-section">
-            <!-- Right Nav Section -->
-            <ul class="right">
-                <li><a href="pages/about.php">About</a></li>
-                <li><a href="products.php">Products</a></li>
-                <li><a href="cart.php">View Cart</a></li>
-                <li><a href="orders.php">My Orders</a></li>
-                <li><a href="pages/contact.php">Contact</a></li>
-                <?php
-
-                if (isset($_SESSION['username'])) {
-                    echo '<li><a href="account.php">My Account</a></li>';
-                    echo '<li><a href="logout.php">Log Out</a></li>';
-                } else {
-                    echo '<li><a href="login.php">Log In</a></li>';
-                    echo '<li><a href="register.php">Register</a></li>';
-                }
-                ?>
-            </ul>
-        </section>
-    </nav>
+        if (isset($_SESSION['username'])) {
+          echo '<a class="mx-3 my-2" href="account.php">My Account</a>>';
+          echo '<a class="mx-3 my-2" href="logout.php">Log Out</a>';
+        } else {
+          echo '<a class="mx-3 my-2" href="login.php">Log In</a>';
+          echo '<a class="mx-3 my-2" href="register.php">Register</a>';
+        }
+        ?>
+    </div>
+  </div>
+</nav>
 
   <!-- HERO IMAGE -->
   <img data-interchange="[images/landscape.jpg, (retina)], [images/landscape.jpg, (large)], [images/mobile.jpg, (mobile)], [images/landscape.jpg, (medium)]">
