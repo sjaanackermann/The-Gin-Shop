@@ -116,60 +116,57 @@ if (session_id() == '' || !isset($_SESSION)) {
   <div class="jumbotron text-center">
     <img src="images/logo.png" alt="logo">
     <hr>
-    <h1 class="display-4">Featured Products</h1>
-  </div>
-  <!-- Images used to open the lightbox -->
-  <div class="row">
-    <div class="column">
-      <img src="images/products/gin1.jpg" alt="gin1" onclick="openModal();currentSlide(1)" class="hover-shadow">
-    </div>
-    <div class="column">
-      <img src="images/products/gin2.jpg" alt="gin2" onclick="openModal();currentSlide(2)" class="hover-shadow">
-    </div>
-    <div class="column">
-      <img src="images/products/gin3.jpg" alt="gin3" onclick="openModal();currentSlide(3)" class="hover-shadow">
-    </div>
+    <h1 class="display-4">Products Coming Soon!</h1>
   </div>
 
-  <!-- The Modal/Lightbox -->
-  <div id="myModal" class="modal">
-    <span class="close cursor" onclick="closeModal()">&times;</span>
-    <div class="modal-content">
 
-      <div class="mySlides">
-        <div class="numbertext">1 / 3</div>
-        <img src="images/products/gin1.jpg" style="width:100%" alt="gin1">
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+    <img src="images/products/gin4.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
-
-      <div class="mySlides">
-        <div class="numbertext">2 / 3</div>
-        <img src="images/products/gin2.jpg" style="width:100%" alt="gin2">
-      </div>
-
-      <div class="mySlides">
-        <div class="numbertext">3 / 3</div>
-        <img src="images/products/gin3.jpg" style="width:100%" alt="gin3">
-      </div>
-
-      <!-- Next/previous controls -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
   </div>
+  <div class="col-sm-6">
+    <div class="card">
+    <img src="images/products/gin5.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+    <img src="images/products/gin6.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
 
   <!-- UPCOMING COLLECTION -->
-  <div class="jumbotron text-center">
+  <!-- <div class="jumbotron text-center">
     <h1 class="display-4">Products Coming Soon!</h1>
-  </div>
+  </div> -->
 
   <!-- Images used to open the lightbox -->
-  <div class="row">
+  <!-- <div class="row">
       <img src="images/products/gin4.jpg" class="hover-shadow" alt="gin4">
       <img src="images/products/gin5.jpg" class="hover-shadow" alt="gin5">
       <img src="images/products/gin6.jpg" class="hover-shadow" alt="gin6">
-  </div>
+  </div> -->
 
 
 

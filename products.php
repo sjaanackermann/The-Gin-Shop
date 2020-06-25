@@ -19,7 +19,7 @@ include 'config/config.php';
 
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Foundation CSS -->
@@ -29,32 +29,32 @@ include 'config/config.php';
 
 <body id="top">
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="../index.php">The Gin Shop</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      <a class="mx-3 my-2" href="pages/about.php">About</a>
-      <a class="mx-3 my-2" href="products.php">Products</a>
-      <a class="mx-3 my-2" href="pages/gallery.php">Gallery</a>
-      <a class="mx-3 my-2" href="cart.php">View Cart</a>
-      <a class="mx-3 my-2" href="orders.php">My Orders</a>
-      <a class="mx-3 my-2" href="pages/contact.php">Contact</a>
-        <?php
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="../index.php">The Gin Shop</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="mx-3 my-2" href="pages/about.php">About</a>
+                <a class="mx-3 my-2" href="products.php">Products</a>
+                <a class="mx-3 my-2" href="pages/gallery.php">Gallery</a>
+                <a class="mx-3 my-2" href="cart.php">View Cart</a>
+                <a class="mx-3 my-2" href="orders.php">My Orders</a>
+                <a class="mx-3 my-2" href="pages/contact.php">Contact</a>
+                <?php
 
-        if (isset($_SESSION['username'])) {
-          echo '<a class="mx-3 my-2" href="account.php">My Account</a>>';
-          echo '<a class="mx-3 my-2" href="logout.php">Log Out</a>';
-        } else {
-          echo '<a class="mx-3 my-2" href="login.php">Log In</a>';
-          echo '<a class="mx-3 my-2" href="register.php">Register</a>';
-        }
-        ?>
-    </div>
-  </div>
-</nav>
+                if (isset($_SESSION['username'])) {
+                    echo '<a class="mx-3 my-2" href="account.php">My Account</a>>';
+                    echo '<a class="mx-3 my-2" href="logout.php">Log Out</a>';
+                } else {
+                    echo '<a class="mx-3 my-2" href="login.php">Log In</a>';
+                    echo '<a class="mx-3 my-2" href="register.php">Register</a>';
+                }
+                ?>
+            </div>
+        </div>
+    </nav>
 
 
 
@@ -77,7 +77,7 @@ include 'config/config.php';
 
                     echo '<div class="large-4 columns zoomin">';
                     echo '<p><h3>' . $obj->product_name . '</h3></p>';
-                    echo '<img id="myImg" src="../images/' . $obj->product_img_name . ' alt="product""/>';
+                    echo '<img id="myImg" src="images/' . $obj->product_img_name . ' alt="product""/>';
                     echo '<p><strong>Product Code</strong>: ' . $obj->product_code . '</p>';
                     echo '<p><strong>Description</strong>: ' . $obj->product_desc . '</p>';
                     echo '<p><strong>Units Available</strong>: ' . $obj->qty . '</p>';
@@ -127,18 +127,18 @@ include 'config/config.php';
                             <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
                                 <h3> About </h3>
                                 <ul>
-                                <li> <a href="pages/about.php"> Our Company </a> </li>
-                            <li> <a href="pages/about.php"> Our Team </a> </li>
-                            <li> <a href="pages/tos.php"> Terms of Services </a> </li>
-                        </ul>
-                    </div>
+                                    <li> <a href="pages/about.php"> Our Company </a> </li>
+                                    <li> <a href="pages/about.php"> Our Team </a> </li>
+                                    <li> <a href="pages/tos.php"> Terms of Services </a> </li>
+                                </ul>
+                            </div>
 
-                    <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
-                        <h3> Other </h3>
-                        <ul>
-                            <li> <a href="pages/contact.php"> Contact Us </a> </li>
-                            <li> <a href="#"> Delivery </a> </li>
-                            <li> <a href="faq.php"> FAQ </a> </li>
+                            <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                                <h3> Other </h3>
+                                <ul>
+                                    <li> <a href="pages/contact.php"> Contact Us </a> </li>
+                                    <li> <a href="#"> Delivery </a> </li>
+                                    <li> <a href="faq.php"> FAQ </a> </li>
                                 </ul>
 
                             </div>
