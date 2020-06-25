@@ -16,7 +16,7 @@ if (session_id() == '' || !isset($_SESSION)) {
     <title>Contact || The Gin Shop</title>
 
     <!-- My CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 
 
     <!-- Bootstrap CSS -->
@@ -24,7 +24,7 @@ if (session_id() == '' || !isset($_SESSION)) {
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Foundation CSS -->
-    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="../css/foundation.css" />
 
     <script src="js/vendor/modernizr.js"></script>
 
@@ -32,7 +32,7 @@ if (session_id() == '' || !isset($_SESSION)) {
 
 <body id="top">
 
-    <nav class="top-bar" data-topbar role="navigation">
+<nav class="top-bar" data-topbar role="navigation">
         <ul class="title-area">
             <li class="name">
                 <h1><a href="index.php">The Gin Shop</a></h1>
@@ -47,7 +47,7 @@ if (session_id() == '' || !isset($_SESSION)) {
                 <li><a href="products.php">Products</a></li>
                 <li><a href="cart.php">View Cart</a></li>
                 <li><a href="orders.php">My Orders</a></li>
-                <li class="active"><a href="pages/contact.php">Contact</a></li>
+                <li class='active'><a href="pages/contact.php">Contact</a></li>
                 <?php
 
                 if (isset($_SESSION['username'])) {

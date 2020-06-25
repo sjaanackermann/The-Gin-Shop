@@ -38,50 +38,48 @@ if(session_id() == '' || !isset($_SESSION)){session_start();}
     <title>The Gin Shop</title>
 
     <!-- My CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Foundation CSS -->
-    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="../css/foundation.css" />
 
     <script src="js/vendor/modernizr.js"></script>
   </head>
   <body id="top">
 
-    <nav class="top-bar" data-topbar role="navigation">
-      <ul class="title-area">
-        <li class="name">
-          <h1><a href="index.php">The Gin Shop</a></h1>
-        </li>
-        <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
-      </ul>
-
-      <section class="top-bar-section">
-      <!-- Right Nav Section -->
-        <ul class="right">
-          <li><a href="pages/about.php">About</a></li>
-          <li><a href="products.php">Products</a></li>
-          <li><a href="cart.php">View Cart</a></li>
-          <li><a href="orders.php">My Orders</a></li>
-          <li><a href="pages/contact.php">Contact</a></li>
-          <?php
-
-          if(isset($_SESSION['username'])){
-            echo '<li><a href="account.php">My Account</a></li>';
-            echo '<li><a href="logout.php">Log Out</a></li>';
-          }
-          else{
-            echo '<li><a href="login.php">Log In</a></li>';
-            echo '<li><a href="register.php">Register</a></li>';
-          }
-          ?>
+  <nav class="top-bar" data-topbar role="navigation">
+        <ul class="title-area">
+            <li class="name">
+                <h1><a href="index.php">The Gin Shop</a></h1>
+            </li>
+            <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
         </ul>
-      </section>
-    </nav>
 
+        <section class="top-bar-section">
+            <!-- Right Nav Section -->
+            <ul class="right">
+                <li><a href="pages/about.php">About</a></li>
+                <li><a href="products.php">Products</a></li>
+                <li><a href="cart.php">View Cart</a></li>
+                <li><a href="orders.php">My Orders</a></li>
+                <li class='active'><a href="pages/contact.php">Contact</a></li>
+                <?php
+
+                if (isset($_SESSION['username'])) {
+                    echo '<li><a href="account.php">My Account</a></li>';
+                    echo '<li><a href="logout.php">Log Out</a></li>';
+                } else {
+                    echo '<li><a href="login.php">Log In</a></li>';
+                    echo '<li><a href="register.php">Register</a></li>';
+                }
+                ?>
+            </ul>
+        </section>
+    </nav>
     <!-- HERO IMAGE -->
     <img data-interchange="[images/landscape.jpg, (retina)], [images/landscape.jpg, (large)], [images/mobile.jpg, (mobile)], [images/landscape.jpg, (medium)]">
     <noscript><img src="images/landscape.jpg" alt="Hero Image"></noscript>

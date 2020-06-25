@@ -16,7 +16,7 @@ if (session_id() == '' || !isset($_SESSION)) {
   <title>The Gin Shop</title>
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">  
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
   <!-- My CSS -->
@@ -77,6 +77,42 @@ if (session_id() == '' || !isset($_SESSION)) {
 
 <body id="top">
 
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="index.php">The Gin Shop</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="mx-3 my-2" href="pages/about.php">About</a>
+      <a class="mx-3 my-2" href="products.php">Products</a>
+      <a class="mx-3 my-2" href="pages/gallery.php">Gallery</a>
+      <a class="mx-3 my-2" href="cart.php">View Cart</a>
+      <a class="mx-3 my-2" href="orders.php">My Orders</a>
+      <a class="mx-3 my-2" href="pages/contact.php">Contact</a>
+        <?php
+
+        if (isset($_SESSION['username'])) {
+          echo '<a class="mx-3 my-2" href="account.php">My Account</a>>';
+          echo '<a class="mx-3 my-2" href="logout.php">Log Out</a>';
+        } else {
+          echo '<a class="mx-3 my-2" href="login.php">Log In</a>';
+          echo '<a class="mx-3 my-2" href="register.php">Register</a>';
+        }
+        ?>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+
+<!-- 
   <nav class="top-bar" data-topbar role="navigation">
     <ul class="title-area">
       <li class="name">
@@ -86,26 +122,26 @@ if (session_id() == '' || !isset($_SESSION)) {
     </ul>
 
     <section class="top-bar-section">
-      <!-- Right Nav Section -->
-      <ul class="right">
+       Right Nav Section -->
+      <!-- <ul class="right">
         <li><a href="pages/about.php">About</a></li>
         <li><a href="products.php">Products</a></li>
         <li><a href="cart.php">View Cart</a></li>
         <li><a href="orders.php">My Orders</a></li>
-        <li><a href="pages/contact.php">Contact</a></li>
+        <li><a href="pages/contact.php">Contact</a></li> -->
         <?php
 
-        if (isset($_SESSION['username'])) {
-          echo '<li><a href="account.php">My Account</a></li>';
-          echo '<li><a href="logout.php">Log Out</a></li>';
-        } else {
-          echo '<li><a href="login.php">Log In</a></li>';
-          echo '<li><a href="register.php">Register</a></li>';
-        }
+        // if (isset($_SESSION['username'])) {
+        //   echo '<li><a href="account.php">My Account</a></li>';
+        //   echo '<li><a href="logout.php">Log Out</a></li>';
+        // } else {
+        //   echo '<li><a href="login.php">Log In</a></li>';
+        //   echo '<li><a href="register.php">Register</a></li>';
+        // }
         ?>
-      </ul>
+      <!-- </ul>
     </section>
-  </nav>
+  </nav> --> 
 
   <!-- HERO IMAGE -->
   <img data-interchange="[images/landscape.jpg, (retina)], [images/landscape.jpg, (large)], [images/mobile.jpg, (mobile)], [images/landscape.jpg, (medium)]">
@@ -167,18 +203,11 @@ if (session_id() == '' || !isset($_SESSION)) {
 
   <!-- Images used to open the lightbox -->
   <div class="row">
-    <div class="column">
       <img src="images/products/gin4.jpg" class="hover-shadow" alt="gin4">
-    </div>
-    <div class="column">
       <img src="images/products/gin5.jpg" class="hover-shadow" alt="gin5">
-    </div>
-    <div class="column">
       <img src="images/products/gin6.jpg" class="hover-shadow" alt="gin6">
-    </div>
   </div>
-  </div>
-  </div>
+
 
 
 

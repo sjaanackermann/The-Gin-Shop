@@ -29,35 +29,35 @@ if (session_id() == '' || !isset($_SESSION)) {
 
 <body id="top">
 
-  <nav class="top-bar" data-topbar role="navigation">
-    <ul class="title-area">
-      <li class="name">
-        <h1><a href="index.php">The Gin Shop</a></h1>
-      </li>
-      <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
-    </ul>
+<nav class="top-bar" data-topbar role="navigation">
+        <ul class="title-area">
+            <li class="name">
+                <h1><a href="index.php">The Gin Shop</a></h1>
+            </li>
+            <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+        </ul>
 
-    <section class="top-bar-section">
-      <!-- Right Nav Section -->
-      <ul class="right">
-        <li><a href="pages/about.php">About</a></li>
-        <li><a href="products.php">Products</a></li>
-        <li><a href="cart.php">View Cart</a></li>
-        <li><a href="orders.php">My Orders</a></li>
-        <li><a href="pages/contact.php">Contact</a></li>
-        <?php
+        <section class="top-bar-section">
+            <!-- Right Nav Section -->
+            <ul class="right">
+                <li><a href="pages/about.php">About</a></li>
+                <li><a href="products.php">Products</a></li>
+                <li><a href="cart.php">View Cart</a></li>
+                <li><a href="orders.php">My Orders</a></li>
+                <li><a href="pages/contact.php">Contact</a></li>
+                <?php
 
-        if (isset($_SESSION['username'])) {
-          echo '<li><a href="account.php">My Account</a></li>';
-          echo '<li><a href="logout.php">Log Out</a></li>';
-        } else {
-          echo '<li><a href="login.php">Log In</a></li>';
-          echo '<li><a href="register.php">Register</a></li>';
-        }
-        ?>
-      </ul>
-    </section>
-  </nav>
+                if (isset($_SESSION['username'])) {
+                    echo '<li><a href="account.php">My Account</a></li>';
+                    echo '<li><a href="logout.php">Log Out</a></li>';
+                } else {
+                    echo '<li><a href="login.php">Log In</a></li>';
+                    echo '<li><a href="register.php">Register</a></li>';
+                }
+                ?>
+            </ul>
+        </section>
+    </nav>
 
   <!-- HERO IMAGE -->
   <img data-interchange="[images/landscape.jpg, (retina)], [images/landscape.jpg, (large)], [images/mobile.jpg, (mobile)], [images/landscape.jpg, (medium)]">

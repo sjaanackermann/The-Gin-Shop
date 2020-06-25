@@ -24,7 +24,7 @@ include 'config/config.php';
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Admin || The Gin Shop</title>
   <!-- My CSS -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
 
 
   <!-- Bootstrap CSS -->
@@ -32,7 +32,7 @@ include 'config/config.php';
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
   <!-- Foundation CSS -->
-  <link rel="stylesheet" href="css/foundation.css" />
+  <link rel="stylesheet" href="../css/foundation.css" />
   <script src="js/vendor/modernizr.js"></script>
 </head>
 
@@ -78,7 +78,7 @@ include 'config/config.php';
         while ($obj = $result->fetch_object()) {
           echo '<div class="large-4 columns">';
           echo '<p><h3>' . $obj->product_name . '</h3></p>';
-          echo '<img src="images/products/' . $obj->product_img_name . '" alt="product"/>';
+          echo '<img src="images/products/' . $obj->product_img_name . '" alt="products"/>';
           echo '<p><strong>Product Code</strong>: ' . $obj->product_code . '</p>';
           echo '<p><strong>Description</strong>: ' . $obj->product_desc . '</p>';
           echo '<p><strong>Units Available</strong>: ' . $obj->qty . '</p>';
