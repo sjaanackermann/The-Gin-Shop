@@ -6,7 +6,14 @@
 	color: white;
 }
 
-input[type=submit]{
+.zoom:hover {
+	-ms-transform: scale(1.1); 
+	-webkit-transform: scale(1.1); 
+	transform: scale(1.1); 
+}
+
+
+/* input[type=submit]{
 	margin: auto;
 	padding: auto;
 	background-color: #31BDE6;
@@ -22,7 +29,7 @@ input[type=submit]{
 
 input[type=submit]:hover {
     border-color: #b5b5b5;
-	color: #363636;}
+	color: #363636;} */
 
 /*Contact Styling*/
 .contact {

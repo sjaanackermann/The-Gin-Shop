@@ -30,7 +30,9 @@ include 'config/config.php';
 <body id="top">
 
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="../index.php">The Gin Shop</a>
+        <a class="navbar-brand" href="../index.php">
+        <img src="images/logo.png" width="60" height="40" alt="The Gin Shop">
+</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -98,7 +100,7 @@ include 'config/config.php';
 
 
                     if ($obj->qty > 0) {
-                        echo '<p><a href="update-cart.php?action=add&id=' . $obj->id . '"><input type="submit" value="Add To Cart" style="clear:both; background: #0078A0; border: none; color: #fff; font-size: 1em; padding: 10px;" /></a></p>';
+                        echo '<p><a href="update-cart.php?action=add&id=' . $obj->id . '"><input class="zoom" type="submit" value="Add To Cart" style="clear:both; background: #0078A0; border: none; color: #fff; font-size: 1em; padding: 10px;" /></a></p>';
                     } else {
                         echo 'Out Of Stock!';
                     }

@@ -34,7 +34,9 @@ if (session_id() == '' || !isset($_SESSION)) {
 <body id="top">
 
 <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="../index.php">The Gin Shop</a>
+  <a class="navbar-brand" href="../index.php">
+  <img src="../images/logo.png" width="60" height="40" alt="The Gin Shop">
+</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>

@@ -5081,10 +5081,51 @@ meta.foundation-version {
     textarea.radius {
       border-radius: 3px; }
   
-  input[type="submit"] {
+  /* input[type="submit"] {
     -webkit-appearance: none;
     -webkit-border-radius: 0px;
-    border-radius: 0; }
+    border-radius: 0;
+    float:right;
+    background:#2ECCFA;
+    border:none;
+    margin:14px;
+    padding:10px 24px;
+    color:#FFF;
+    -webkit-border-radius:5px;
+    cursor:pointer;
+    transition: all 100ms ease;
+    -webkit-transition: all 100ms ease; }
+    
+    
+  input[type="submit"]:hover {
+    background:lighten(#2ECCFA, 20%);
+    margin:6px;
+    padding:18px 32px;
+    transition: all 100ms ease;
+    -webkit-transition: all 100ms ease; }
+
+    input[type="reset"] {
+      -webkit-appearance: none;
+      -webkit-border-radius: 0px;
+      border-radius: 0;
+      float:right;
+      background:#2ECCFA;
+      border:none;
+      margin:14px;
+      padding:10px 24px;
+      color:#FFF;
+      -webkit-border-radius:5px;
+      cursor:pointer;
+      transition: all 100ms ease;
+      -webkit-transition: all 100ms ease; }
+      
+      
+    input[type="reset"]:hover {
+      background:lighten(#2ECCFA, 20%);
+      margin:6px;
+      padding:18px 32px;
+      transition: all 100ms ease;
+      -webkit-transition: all 100ms ease; } */
   
   /* Respect enforced amount of rows for textarea */
   textarea[rows] {
