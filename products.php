@@ -19,7 +19,7 @@ include 'config/config.php';
 
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">  
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Foundation CSS -->
@@ -77,7 +77,7 @@ include 'config/config.php';
 
                     echo '<div class="large-4 columns zoomin">';
                     echo '<p><h3>' . $obj->product_name . '</h3></p>';
-                    echo '<img id="myImg" src="images/products/' . $obj->product_img_name . ' alt="product""/>';
+                    echo '<img id="myImg" src="../images/' . $obj->product_img_name . ' alt="product""/>';
                     echo '<p><strong>Product Code</strong>: ' . $obj->product_code . '</p>';
                     echo '<p><strong>Description</strong>: ' . $obj->product_desc . '</p>';
                     echo '<p><strong>Units Available</strong>: ' . $obj->qty . '</p>';

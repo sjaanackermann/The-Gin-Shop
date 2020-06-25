@@ -2902,11 +2902,11 @@ meta.foundation-version {
   
   /* Default Link Styles */
   a {
-    color: #008cba;
+    color: white;
     text-decoration: none;
     line-height: inherit; }
     a:hover, a:focus {
-      color: #0078a0; }
+      color: lightgray; }
     a img {
       border: none; }
   
