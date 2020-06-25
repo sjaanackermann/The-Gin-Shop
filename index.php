@@ -123,31 +123,28 @@ if (session_id() == '' || !isset($_SESSION)) {
 <div class="row">
   <div class="col-sm-6">
     <div class="card">
-    <img src="images/products/gin4.jpg" class="card-img-top" alt="...">
+    <img src="images/gin4.jpg" class="card-img-top" alt="gin4">
       <div class="card-body">
         <h5 class="card-title">Special title treatment</h5>
         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
     </div>
   </div>
   <div class="col-sm-6">
     <div class="card">
-    <img src="images/products/gin5.jpg" class="card-img-top" alt="...">
+    <img src="images/gin5.jpg" class="card-img-top" alt="gin5">
       <div class="card-body">
         <h5 class="card-title">Special title treatment</h5>
         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
     </div>
   </div>
   <div class="col-sm-6">
     <div class="card">
-    <img src="images/products/gin6.jpg" class="card-img-top" alt="...">
+    <img src="images/gin6.jpg" class="card-img-top" alt="gin6">
       <div class="card-body">
         <h5 class="card-title">Special title treatment</h5>
         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
     </div>
   </div>

@@ -111,13 +111,13 @@ if (session_id() == '' || !isset($_SESSION)) {
   <!-- Images used to open the lightbox -->
   <div class="row">
     <div class="column">
-      <img src="images/products/gin4.jpg" alt="gin1" onclick="openModal();currentSlide(1)" class="hover-shadow">
+      <img src="images/gin4.jpg" alt="gin1" onclick="openModal();currentSlide(1)" class="hover-shadow">
     </div>
     <div class="column">
-      <img src="images/products/gin5.jpg" alt="gin2" onclick="openModal();currentSlide(2)" class="hover-shadow">
+      <img src="images/gin5.jpg" alt="gin2" onclick="openModal();currentSlide(2)" class="hover-shadow">
     </div>
     <div class="column">
-      <img src="images/products/gin6.jpg" alt="gin3" onclick="openModal();currentSlide(3)" class="hover-shadow">
+      <img src="images/gin6.jpg" alt="gin3" onclick="openModal();currentSlide(3)" class="hover-shadow">
     </div>
   </div>
 
@@ -128,17 +128,17 @@ if (session_id() == '' || !isset($_SESSION)) {
 
       <div class="mySlides">
         <div class="numbertext">1 / 3</div>
-        <img src="images/products/gin4.jpg" style="width:100%" alt="gin1">
+        <img src="images/gin4.jpg" style="width:100%" alt="gin1">
       </div>
 
       <div class="mySlides">
         <div class="numbertext">2 / 3</div>
-        <img src="images/products/gin5.jpg" style="width:100%" alt="gin2">
+        <img src="images/gin5.jpg" style="width:100%" alt="gin2">
       </div>
 
       <div class="mySlides">
         <div class="numbertext">3 / 3</div>
-        <img src="images/products/gin6.jpg" style="width:100%" alt="gin3">
+        <img src="images/gin6.jpg" style="width:100%" alt="gin3">
       </div>
 
       <!-- Next/previous controls -->
